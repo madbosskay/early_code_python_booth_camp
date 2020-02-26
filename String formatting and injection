@@ -1,0 +1,33 @@
+#ASSIGNMENT 1
+#Write a console application that collects two sets of numbers from a user
+#Add the first and second number
+#Then report the result of the addition like this: "number .... plus number .... is equal to ....."
+
+# SOLUTION 1
+point_1 = int(input('Insert length: ' ))
+point_2 = int(input('Insert width: ' ))
+total_length = point_1 + point_2
+print(f'The total length is obtained when {point_1}m is added to {point_2}m which is equal to {total_length}m.')
+Area_1 = point_1 * point_2
+print(f'The Area is obtained when {point_1}m is multiplied by {point_2}m which is equal to {Area_1}m.')
+Average = point_1 / point_2
+print(f'The total length is obtained when {point_1}m is divided by {point_2}m which is equal to {Average}m.')
+
+
+# ASSIGNMENT 2
+# Write a console application that greets someone
+# Whatever name the user typed, it will say: "You are blessed ...."
+
+# SOLUTION 2
+name = input('Username:  \n')
+print(f'You are blessed {name}!')
+
+
+#ASSIGNMENT 3
+#Write a console application that generates random numbers in 6 digits (must always be 6 digits)
+#Then say: "your OTP is ....""
+
+# SOLUTION 3
+import random
+OTP_code = random.randrange(100000,999999)
+print(f'OTP: {OTP_code} expires after one minute.')
